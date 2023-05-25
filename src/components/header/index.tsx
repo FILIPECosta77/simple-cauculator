@@ -7,9 +7,21 @@ import Typography from "@mui/material/Typography";
 const MyHeader = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar
+        position="static"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Toolbar variant="dense">
-          <Typography variant="h6" color="inherit" component="div">
+          <Typography
+            variant="h4"
+            color="inherit"
+            component="div"
+            sx={{ p: 2 }}
+          >
             Calculadora
           </Typography>
         </Toolbar>

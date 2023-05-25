@@ -1,14 +1,12 @@
-import MyHeader from "./components/header";
-import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider } from "@emotion/react";
+import { lightTheme } from "./css/theme";
+import Home from "./components/home";
 
 function App() {
   return (
-    <>
-      <CssBaseline />
-      <main>
-        <MyHeader />
-      </main>
-    </>
+    <ThemeProvider theme={lightTheme}>
+      <Home />
+    </ThemeProvider>
   );
 }
 
